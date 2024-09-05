@@ -1,11 +1,11 @@
 Demonstrate how to add large binary files in git using lfs:
 
-              TESTED SUCCESSFULLY ON MAC
+              #TESTED SUCCESSFULLY ON MAC
 
 Git LFS is useful to handle large binary files efficiently.
 
 
-1. Install Git LFS:
+##1. Install Git LFS:
 
 pip install git-lfs
 
@@ -13,21 +13,21 @@ After installing, initialize Git LFS in your repository:
 
 git lfs install
 
-2. Create a Branch:
+##2. Create a Branch:
 
 git checkout -b lfs
 git lfs track "*.bin"
 
 This command creates a .gitattributes file in your current directory which provides info on Git LFS tracking files i.e. .bin files in this case.
 
-3. Add, Commit, and Push to repo:
+##3. Add, Commit, and Push to repo:
 
 git add .gitattributes
 git add *.bin
 git commit -m "adding large binary file using git-lfs"
 git push origin lfs
 
-4. If incase we have not enabled git-lfs:
+##4. If incase we have not enabled git-lfs:
 
 abhutoria@abhutor-ltmbqz4 git_assignment_HeroVired % git push origin test1            
 Enumerating objects: 4, done.
